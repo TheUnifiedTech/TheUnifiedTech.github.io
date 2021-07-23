@@ -9,16 +9,23 @@
 </head>
 <body>
     <header>
-        <p class="logo">TheUnifiedTech</p>
+        <a href="/" class="logo">TheUnifiedTech</p>
         <nav>
             <ul class="navlinks">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Team</a></li>
             </ul>
         </nav>
         <a href="#" class="cta"><button>Contact</button></a>
     </header>
-    <div class="content"><br>${body}</div>
+    <div class="content">
+        <h1 class="title">${title}</h1>
+        <a href="/people/${author}" class="title"><h2 class="title">${author}</h2></a>
+        <br>
+        <hr>
+        ${body}
+    </div>
 </body>
 </html>

@@ -7,7 +7,7 @@
 
 }
 
-*:not(p:not(logo), .content, h1, h2, h3, h4, h5, h6, button) {
+*:not(.content) {
     background-color: #24252A;
 }
 
@@ -19,13 +19,8 @@ li, a, button, .logo, .content {
     text-decoration: none;
 }
 
-.content {
-    padding: 0 5%;
-    margin: 0 5%;
-}
-
 p:not(.logo), .content, h1, h2, h3, h4, h5, h6 {
-    background-color: #1f1f22;
+    background-color: #1f1f22!important;
 }
 
 .content {
@@ -33,7 +28,12 @@ p:not(.logo), .content, h1, h2, h3, h4, h5, h6 {
     border-radius: 12px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.content {
+    padding: 3% 5%;
+    margin: 0 5%;
+}
+
+h1:not(.title), h2, h3, h4, h5, h6 {
     margin-top: 30px;
 }
 
@@ -45,7 +45,7 @@ header {
 }
 
 .logo {
-    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
 .navlinks {
@@ -59,15 +59,18 @@ header {
 
 .navlinks li a {
     transition: all 0.3s ease 0s;
+    color: #0088a9;
 }
 
-.navlinks li a {
-    color: #0088a9;
+.navlinks li a:hover, .logo:hover, a.title:hover {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #14abd1;
 }
 
 button {
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    background-color: rgba(0, 136, 169, 1)!important;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -75,5 +78,21 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: rgba(0, 136, 169, 0.8)!important;
+    transition: all 0.3s ease 0s;
+}
+
+
+h1.title {
+    font-size: 5em;
+    color: #14abd1;
+    margin-bottom: -0.5em;
+}
+
+a.title {
+    margin-bottom: 10em;
+    font-size: 1em;
+    color: #0088a9;
+    text-decoration: underline;
+    transition: all 0.3s ease 0s;
 }

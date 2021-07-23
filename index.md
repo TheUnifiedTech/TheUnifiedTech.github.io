@@ -3,7 +3,9 @@ title: Welcome
 author: AncientStraits
 ---
 
-# Welcome to TheUnifiedTech!
+# Welcome to TheUnifiedTech
+## Technlogy Redefined
+## *Are you excited to join us on our journey?*
 
 ## About
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu congue purus. Ut a elit vitae turpis lacinia mollis. Duis vitae nibh quam. Sed libero neque, facilisis eget congue quis, fermentum id libero. Donec a sapien vitae velit lobortis convallis vel eget sapien. Cras ut nibh sed sapien vehicula congue ac vel nibh. Duis a tellus lorem. Aenean quis iaculis turpis. Donec laoreet tempor tortor a ornare. Ut nec tempus augue.
