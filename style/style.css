@@ -7,7 +7,7 @@
 
 }
 
-*:not(.content) {
+*:not(.content, .content > * > *) {
     background-color: #24252A;
 }
 
@@ -20,12 +20,21 @@ li, a, button, .logo, .content {
 }
 
 p:not(.logo), .content, h1, h2, h3, h4, h5, h6 {
-    background-color: #1f1f22!important;
+    background-color: #19191b!important;
 }
 
 .content {
     border-style: solid;
     border-radius: 12px;
+    border-color: #14abd177;
+}
+
+.content > p {
+    font-weight: none;
+}
+
+.content > p > strong {
+    font-weight: bold;
 }
 
 .content {
