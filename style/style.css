@@ -1,107 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 
 * {
+    font-family: Roboto;
+    font-weight: 300;
     box-sizing: border-box;
+}
+
+strong {
+    font-weight: 500;
+}
+
+body {
     margin: 0;
     padding: 0;
-
 }
 
-*:not(.content, .content > * > *) {
-    background-color: #24252A;
-}
-
-li, a, button, .logo, .content {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-p:not(.logo), .content, h1, h2, h3, h4, h5, h6 {
-    background-color: #19191b!important;
-}
-
-.content {
-    border-style: solid;
-    border-radius: 12px;
-    border-color: #14abd177;
-}
-
-.content > p {
-    font-weight: none;
-}
-
-.content > p > strong {
-    font-weight: bold;
-}
-
-.content {
-    padding: 3% 5%;
-    margin: 0 5%;
-}
-
-h1:not(.title), h2, h3, h4, h5, h6 {
-    margin-top: 30px;
-}
-
-header {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    background-color: #333;
+    color: white;
 }
 
-.logo {
-    transition: all 0.3s ease 0s;
+.title a {
+    /* padding-left: 1rem; */
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.5rem;
 }
 
-.navlinks {
+.links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.links li {
     list-style: none;
 }
 
-.navlinks li {
-    display: inline-block;
-    padding: 0px 20px;
+.links li a, .title a {
+    text-decoration: none;
+    color: white;
 }
 
-.navlinks li a {
-    transition: all 0.3s ease 0s;
-    color: #0088a9;
+.links li a {
+    display: block;
+    padding: 1rem;
 }
 
-.navlinks li a:hover, .logo:hover, a.title:hover {
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: #14abd1;
-}
-
-button {
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1)!important;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(0, 136, 169, 0.8)!important;
-    transition: all 0.3s ease 0s;
+.links li a:hover, .title a:hover {
+    background-color: #555;
 }
 
 
-h1.title {
-    font-size: 5em;
-    color: #14abd1;
-    margin-bottom: -0.5em;
+/* BODY */
+
+hr {
+    height: 5px;
+    background-color: hsl(0, 0%, 27%);
+    color: rgb(0, 0%, 27%);
 }
 
-a.title {
-    margin-bottom: 10em;
-    font-size: 1em;
-    color: #0088a9;
-    text-decoration: underline;
-    transition: all 0.3s ease 0s;
+.article-title, .content, hr {
+    margin: 2rem;
+}
+
+.article-title {
+    /* margin: 2rem; */
+    margin-top: 3rem;
+    line-height: 0.5rem;
+}
+
+.article-title > h1 {
+    /* margin-top: 2.5rem; */
+    font-size: 3rem;
+}
+
+.article-title > h2 {
+    font-size: 1.5rem;
+}
+
+.content {
+    text-align: center;
 }

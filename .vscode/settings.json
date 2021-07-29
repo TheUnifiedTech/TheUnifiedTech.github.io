@@ -4,7 +4,12 @@
             {
                 "match": "_index.html",
                 "isAsync": true,
-                "cmd": "echo hi"
+                "cmd": "make"
+            },
+            {
+                "match": "*.md",
+                "isAsync": true,
+                "cmd": "make"
             }
         ]
     }
