@@ -1,6 +1,6 @@
-all: index.html
+all: $(patsubst %.md, %.html, $(wildcard *.md))
 
-index.html: index.md template/_index.html
+%.html: %.md template/_index.html
 	$(info compiling $@...)
 	@pandoc -o $@ $< --template $(word 2,$^)
 	$(info $@ compiled)

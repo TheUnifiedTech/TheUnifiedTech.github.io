@@ -8,11 +8,20 @@
     box-sizing: border-box;
 }
 
-strong {
+p {
+	font-size: 2rem;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+strong, figcaption {
     font-weight: 500;
 }
 
 body {
+    background-color: rgb(82, 157, 255);
     margin: 0;
     padding: 0;
 }
@@ -21,7 +30,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: hsl(240, 50%, 50%);
     color: white;
 }
 
@@ -53,7 +62,7 @@ nav {
 }
 
 .links li a:hover, .title a:hover {
-    background-color: #555;
+    background-color: hsl(240, 50%, 25%);
 }
 
 
@@ -62,11 +71,15 @@ nav {
 hr {
     height: 5px;
     background-color: hsl(0, 0%, 27%);
-    color: rgb(0, 0%, 27%);
+    color: #555;
 }
 
 .article-title, .content, hr {
     margin: 2rem;
+}
+
+.article-title, .content {
+    background-color: rgb(82, 157, 255);
 }
 
 .article-title {
@@ -86,4 +99,10 @@ hr {
 
 .content {
     text-align: center;
+    padding: 0 10%;
+}
+
+.content > h1, .content > h2 {
+    margin-top: 5rem;
+    margin-bottom: -1.5rem;
 }
