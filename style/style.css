@@ -18,6 +18,8 @@ body {
 
 #content {
 	padding:  6%;
+	margin:  6%;
+	text-align: center;
 }
 
 nav {
@@ -105,9 +107,6 @@ nav label:hover {
 		width: 100%;
 		top: 0;
 		left: 0%;
-	}
-	#navbar li:first-child {
-		display: block;
 	}
 	#navbar {
 		display: none;
